@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MarchingCubes' target in the 'MarchingCubes' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
