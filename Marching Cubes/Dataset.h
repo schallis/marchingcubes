@@ -27,8 +27,8 @@ typedef struct {
     NSString *rawData;
     NSArray *scalarData;
     NSArray *dimensions;    // x, y, z
+    NSMutableArray *hits;
     Triangle *triangles;
-    Hit *hits;
     Vertex *vertices;
     int num_triangles;
     int num_allocated;
@@ -60,6 +60,7 @@ typedef struct {
 - (void)renderWithSmoothing:(BOOL)smoothing cellShading:(BOOL)cell; // draw triangles
 - (void)renderNormalsAtScale:(float)scale withSmoothing:(BOOL)smoothing;
 - (void)renderVertices;
+- (void)renderIllumination;
 - (int)addTriangle:(Triangle)item;
 - (Hit *)intersectRay:(Ray *)r withIsovalue:(float)val;
 - (Hit *)intersectRay:(Ray *)r withVoxel:(Vec3 *)voxel isovalue:(float)val tin:(Vec3 *)tin tout:(Vec3 *)tout;

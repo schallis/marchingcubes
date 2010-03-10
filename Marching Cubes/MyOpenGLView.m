@@ -321,20 +321,24 @@ recVec gOrigin = {0.0, 0.0, 0.0};
         } else {
             glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
         }
-        glColor3f(0.5f, 0.6f, 0.7f);
-        if (vertexNormals > 0) {
-            [dataset renderWithSmoothing:TRUE cellShading:FALSE];
+        if (surfaceType == @"illumination") {
+            [dataset renderIllumination];
         } else {
-            [dataset renderWithSmoothing:FALSE cellShading:FALSE];
-        }
-        // Draw normals
-        if (showNormals > 0) {
+            glColor3f(0.5f, 0.6f, 0.7f);
             if (vertexNormals > 0) {
-            [dataset renderNormalsAtScale:0.1 withSmoothing:TRUE];
+                [dataset renderWithSmoothing:TRUE cellShading:FALSE];
             } else {
-                [dataset renderNormalsAtScale:0.1 withSmoothing:FALSE];
+                [dataset renderWithSmoothing:FALSE cellShading:FALSE];
             }
+            // Draw normals
+            if (showNormals > 0) {
+                if (vertexNormals > 0) {
+                [dataset renderNormalsAtScale:0.1 withSmoothing:TRUE];
+                } else {
+                    [dataset renderNormalsAtScale:0.1 withSmoothing:FALSE];
+                }
 
+            }
         }
     }
         

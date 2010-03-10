@@ -36,6 +36,7 @@
     surfaceList = [[NSArray alloc] initWithObjects:
                    [NSDictionary dictionaryWithObjectsAndKeys:@"Solid", @"name", @"solid", @"value", nil],
                    [NSDictionary dictionaryWithObjectsAndKeys:@"Lines", @"name", @"lines", @"value", nil],
+                   [NSDictionary dictionaryWithObjectsAndKeys:@"Illumination", @"name", @"illumination", @"value", nil],
                    [NSDictionary dictionaryWithObjectsAndKeys:@"None", @"name", @"none", @"value", nil],
                    nil]; // don't forget the nil!
     

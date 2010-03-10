@@ -85,27 +85,32 @@ int signof(float a) { return (a == 0) ? 0 : (a<0 ? -1 : 1); }
     //Ray *r = [[Ray alloc] initWithOrigin:origin direction:direction];
     //NSLog(@"New ray: %@", r);
     //[self intersectRay:r withIsovalue:0.005];
-    [self computeIlluminationWithSamples:10000];
+    [self computeIlluminationWithSamples:20000];
 }
 
 - (void)computeIlluminationWithSamples:(int)samples {
     // generate 1 ray per sample
+    hits = [[NSMutableArray alloc] init];
     int num_hits = 0;
     for (int i=0; i<samples; i++) {
         float x = (float)rand()/(float)RAND_MAX*([[dimensions objectAtIndex:0] floatValue]-1);
         float y = (float)rand()/(float)RAND_MAX*([[dimensions objectAtIndex:1] floatValue]-1);
+        float iso = (float)rand()/(float)RAND_MAX;
         //NSLog(@"x:%f y:%f",x, y);
         Vec3 *origin = [[Vec3 alloc] initiWithX:x Y:y Z:0];
         Vec3 *direction = [[Vec3 alloc] initiWithX:0 Y:0 Z:1];
         Ray *r = [[Ray alloc] initWithOrigin:origin direction:direction];
         //NSLog(@"New ray: %@", r);
-        float v = [self isovalueFromUnitIsovalue:0.5];
+        float v = [self isovalueFromUnitIsovalue:iso];
         //NSLog(@"iso: %f", v);
         Hit *hit = [self intersectRay:r withIsovalue:v];
-        if (hit)
+        if (hit) {
             num_hits += 1;
+            [hits addObject:hit];
+        }
     }
     NSLog(@"Hits: %d", num_hits);
+    //NSLog(@"hits array: %@", hits);
 }
 
 - (float)isovalueFromUnitIsovalue:(float)value {
@@ -325,6 +330,25 @@ int signof(float a) { return (a == 0) ? 0 : (a<0 ? -1 : 1); }
     }
 }
 
+-(void)renderIllumination {
+    int arrayCount = [hits count];
+    int x = (int)[[dimensions objectAtIndex:0] intValue];
+    int y = (int)[[dimensions objectAtIndex:1] intValue];
+    int z = (int)[[dimensions objectAtIndex:2] intValue];
+    glColor3f(1.0, 1.0, 1.0);
+    for (int i=0; i<arrayCount; i++) {
+        Hit *hit = [hits objectAtIndex:i];
+        if ([hit isovalue] > isovalue*0.9 && [hit isovalue] < isovalue*1.1) {
+            float x_pos = ((GLfloat)[[hit location] x]-((x-1)/2.0))/(x-1);
+            float y_pos = ((GLfloat)[[hit location] y]-((y-1)/2.0))/(y-1);
+            float z_pos = ((GLfloat)[[hit location] z]-((z-1)/2.0))/(z-1);
+            glBegin(GL_POINTS);
+            glVertex3f(x_pos,y_pos,z_pos);
+            glEnd();
+        }
+    }
+}
+
 // Dynamically resize array to accommodate new objects
 -(int)addTriangle:(Triangle)item {
 
@@ -376,6 +400,7 @@ int signof(float a) { return (a == 0) ? 0 : (a<0 ? -1 : 1); }
     float vs[8];
     for (int n=0; n<8; n++) {
         vs[n] = [[[self scalarData] objectAtIndex:is[n]] floatValue];
+        //NSLog(@"vs:%f", vs[n]);
     }
     // Figure out which ones are above the threshold
     int count = 0;
@@ -396,25 +421,25 @@ int signof(float a) { return (a == 0) ? 0 : (a<0 ? -1 : 1); }
         iny = [tin y]-[voxel y];
         inz = [tin z]-[voxel z];
         //NSLog(@"ins: %f %f %f", inx, iny, inz);
-        dx00 = LERP(inz, vs[0], vs[1]);
-        dx01 = LERP(inz, vs[4], vs[5]);
-        dx10 = LERP(inz, vs[2], vs[3]);
-        dx11 = LERP(inz, vs[6], vs[7]);
+        dx00 = LERP(inx, vs[0], vs[1]);
+        dx01 = LERP(inx, vs[4], vs[5]);
+        dx10 = LERP(inx, vs[2], vs[3]);
+        dx11 = LERP(inx, vs[6], vs[7]);
         dxy0 = LERP(iny, dx00, dx10);
         dxy1 = LERP(iny, dx01, dx11);
-        pin = LERP(inx, dxy0, dxy1);
+        pin = LERP(inz, dxy0, dxy1);
         
         outx = [tout x]-[voxel x];
         outy = [tout y]-[voxel y];
         outz = [tout z]-[voxel z];
         //NSLog(@"outs: %f %f %f", outx, outy, outz);
-        dx00 = LERP(outz, vs[0], vs[1]);
-        dx01 = LERP(outz, vs[4], vs[5]);
-        dx10 = LERP(outz, vs[2], vs[3]);
-        dx11 = LERP(outz, vs[6], vs[7]);
+        dx00 = LERP(outx, vs[0], vs[1]);
+        dx01 = LERP(outx, vs[4], vs[5]);
+        dx10 = LERP(outx, vs[2], vs[3]);
+        dx11 = LERP(outx, vs[6], vs[7]);
         dxy0 = LERP(outy, dx00, dx10);
         dxy1 = LERP(outy, dx01, dx11);
-        pout = LERP(outx, dxy0, dxy1);
+        pout = LERP(outz, dxy0, dxy1);
         
         //NSLog(@"pin:%f pout:%f", pin, pout);
         //NSLog(@"tin:%@ tout:%@", tin, tout);
@@ -424,7 +449,7 @@ int signof(float a) { return (a == 0) ? 0 : (a<0 ? -1 : 1); }
         } else {
             Vec3 *thit = [tin c_add:[[tout c_subtract:tin] c_product:((val - pin) / (pout - pin))]];
             Vec3 *color = [[Vec3 alloc] initiWithX:1.0 Y:1.0 Z:1.0];
-            Hit *hit = [[Hit alloc] initWithLocation:thit rgb:color];
+            Hit *hit = [[Hit alloc] initWithLocation:thit rgb:color isovalue:val];
             //NSLog(@"Hit surface at: %@", thit);
             return hit;
         }
@@ -501,9 +526,12 @@ int signof(float a) { return (a == 0) ? 0 : (a<0 ? -1 : 1); }
                 //NSLog(@"tParam: %f, tParamNext: %f", tParam, tParamNext);
                 //NSLog(@"current: %@", cur);
                 //NSLog(@"point: %@", [r pointAtParamater:tParamNext]);
-                return [self intersectRay:r  withVoxel:oldCur isovalue:val
-                                      tin:[r pointAtParamater:tParam]
-                                     tout:[r pointAtParamater:tParamNext]];
+                Hit *test = [self intersectRay:r  withVoxel:oldCur isovalue:val
+                                           tin:[r pointAtParamater:tParam]
+                                          tout:[r pointAtParamater:tParamNext]];
+                if (test) {
+                    return test;
+                }
             }
         } else if (dy != 0 && (dy <= dx || dx == 0) && (dy <= dz || dx == 0)) {
             if (([cur y] > [[dimensions objectAtIndex:1] floatValue]-2) || ([cur y] < 0)) {
@@ -526,9 +554,12 @@ int signof(float a) { return (a == 0) ? 0 : (a<0 ? -1 : 1); }
                 //NSLog(@"tParam: %f, tParamNext: %f", tParam, tParamNext);
                 //NSLog(@"current: %@", cur);
                 //NSLog(@"point: %@", [r pointAtParamater:tParamNext]);
-                return [self intersectRay:r  withVoxel:oldCur isovalue:val
-                                      tin:[r pointAtParamater:tParam]
-                                     tout:[r pointAtParamater:tParamNext]];
+                Hit *test = [self intersectRay:r  withVoxel:oldCur isovalue:val
+                                           tin:[r pointAtParamater:tParam]
+                                          tout:[r pointAtParamater:tParamNext]];
+                if (test) {
+                    return test;
+                }
             }
         } else if (dz != 0 && (dz <= dx || dx == 0) && (dz <= dy || dx == 0)) {
             if (([cur z] > [[dimensions objectAtIndex:2] floatValue]-2) || ([cur z] < 0)) {
@@ -553,9 +584,13 @@ int signof(float a) { return (a == 0) ? 0 : (a<0 ? -1 : 1); }
                 //NSLog(@"tParam: %f, tParamNext: %f", tParam, tParamNext);
                 //NSLog(@"current: %@", cur);
                 //NSLog(@"point: %@", [r pointAtParamater:tParamNext]);
-                return [self intersectRay:r  withVoxel:oldCur isovalue:val
-                                      tin:[r pointAtParamater:tParam]
-                                     tout:[r pointAtParamater:tParamNext]];
+                Hit *test = [self intersectRay:r  withVoxel:oldCur isovalue:val
+                                           tin:[r pointAtParamater:tParam]
+                                          tout:[r pointAtParamater:tParamNext]];
+                if (test) {
+                    return test;
+                }
+                
             }
         } else {
             NSLog(@"Error: d:%.1f %.1f %.1f cur:%@", dx, dy, dz, cur);

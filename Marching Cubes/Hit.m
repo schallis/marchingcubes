@@ -11,17 +11,18 @@
 
 @implementation Hit
 
-@synthesize location, rgb;
+@synthesize location, rgb, isovalue;
 
 - (NSString *)description {
     return [NSString stringWithFormat:@"<Hit: l(%.1f, %.1f, %.1f) c(%.1f, %.1f, %.1f)>",
             location.x, location.y, location.z, rgb.x, rgb.y, rgb.z];
 }
 
-- (id)initWithLocation:(Vec3 *)newLocation rgb:(Vec3 *)newRgb {
+- (id)initWithLocation:(Vec3 *)newLocation rgb:(Vec3 *)newRgb isovalue:(float)value {
     [super init];
     location = newLocation;
     rgb = newRgb;
+    isovalue = value;
     return self;
 }
 

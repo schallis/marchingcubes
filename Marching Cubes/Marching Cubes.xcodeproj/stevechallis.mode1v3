@@ -329,7 +329,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>2CC994701147219C005977E4</string>
+										<string>2CC9953011474ABC005977E4</string>
 										<key>history</key>
 										<array>
 											<string>2CF71BFF10CC37DA005AE3A3</string>
@@ -356,29 +356,29 @@
 											<string>2C83B1C8113325F6006A1002</string>
 											<string>2CD197F711375B7D009C4018</string>
 											<string>2CC98F761145F488005977E4</string>
-											<string>2CC98FCC1145F98E005977E4</string>
-											<string>2CC98FCD1145F98E005977E4</string>
 											<string>2CC9912311461E21005977E4</string>
 											<string>2CC9912411461E21005977E4</string>
 											<string>2CC9916411462612005977E4</string>
-											<string>2CC991EF11463242005977E4</string>
 											<string>2CC991F81146331B005977E4</string>
 											<string>2CC991F91146331B005977E4</string>
 											<string>2CC991FA1146331B005977E4</string>
 											<string>2CC991FB1146331B005977E4</string>
 											<string>2CC991FC1146331B005977E4</string>
 											<string>2CC991FD1146331B005977E4</string>
-											<string>2CC993D8114715DB005977E4</string>
 											<string>2CC9940E11471936005977E4</string>
 											<string>2CC9940F11471936005977E4</string>
-											<string>2CC9944711471FA4005977E4</string>
-											<string>2CC9944811471FA4005977E4</string>
 											<string>2CC9944A11471FA4005977E4</string>
 											<string>2CC9944B11471FA4005977E4</string>
-											<string>2CC9944C11471FA4005977E4</string>
-											<string>2CC9945F114720FC005977E4</string>
-											<string>2CC9946E1147219C005977E4</string>
-											<string>2CC9946F1147219C005977E4</string>
+											<string>2CC9949A114728C6005977E4</string>
+											<string>2CC994E2114741C9005977E4</string>
+											<string>2CC994E3114741C9005977E4</string>
+											<string>2CC994E4114741C9005977E4</string>
+											<string>2CC994F4114742B7005977E4</string>
+											<string>2CC9950D1147476E005977E4</string>
+											<string>2CC9950E1147476E005977E4</string>
+											<string>2CC9950F1147476E005977E4</string>
+											<string>2CC9951C114747FD005977E4</string>
+											<string>2CC9951D114747FD005977E4</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -576,13 +576,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>2CC994711147219C005977E4</string>
 		<string>2CC98F7E1145F488005977E4</string>
 		<string>2CC98F7F1145F488005977E4</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>2C596EA710C9767900F8E9FF</string>
-		<string>/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Marching Cubes.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Marching Cubes.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 59 1280 719 0 0 1280 778 </string>
@@ -601,12 +600,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Dataset.m</string>
+								<string>Hit.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -623,8 +624,6 @@
 							<string>229pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
