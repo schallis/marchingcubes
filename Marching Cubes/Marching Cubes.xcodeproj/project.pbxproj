@@ -18,6 +18,9 @@
 		2C596EDD10C982E900F8E9FF /* MyOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C596EDC10C982E900F8E9FF /* MyOpenGLView.m */; };
 		2C59701910CA00AE00F8E9FF /* functions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C59701810CA00AE00F8E9FF /* functions.m */; };
 		2C7C1CDD111B4F7200962813 /* broken-test.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2C7C1CDC111B4F7200962813 /* broken-test.txt */; };
+		2C83B11E11331683006A1002 /* Ray.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83B11D11331683006A1002 /* Ray.m */; };
+		2C83B12E11331CAA006A1002 /* Vec3.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83B12D11331CAA006A1002 /* Vec3.m */; };
+		2CC9943311471D0C005977E4 /* Hit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9943211471D0C005977E4 /* Hit.m */; };
 		2CD792DC111111B30028FFF0 /* EngineQuarterScale.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2CD792DB111111B30028FFF0 /* EngineQuarterScale.txt */; };
 		2CD792EA111112270028FFF0 /* atom9.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2CD792E9111112270028FFF0 /* atom9.txt */; };
 		2CD79302111113230028FFF0 /* 3dheadHalfScaleSmooth.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2CD79301111113230028FFF0 /* 3dheadHalfScaleSmooth.txt */; };
@@ -64,6 +67,12 @@
 		2C59701810CA00AE00F8E9FF /* functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = functions.m; sourceTree = "<group>"; };
 		2C7C1CDC111B4F7200962813 /* broken-test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "broken-test.txt"; sourceTree = "<group>"; };
 		2C80F3CF110DD34B000F2EC5 /* Marching Cubes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marching Cubes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C83B11C11331683006A1002 /* Ray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ray.h; sourceTree = "<group>"; };
+		2C83B11D11331683006A1002 /* Ray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ray.m; sourceTree = "<group>"; };
+		2C83B12C11331CAA006A1002 /* Vec3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vec3.h; sourceTree = "<group>"; };
+		2C83B12D11331CAA006A1002 /* Vec3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vec3.m; sourceTree = "<group>"; };
+		2CC9943111471D0C005977E4 /* Hit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hit.h; sourceTree = "<group>"; };
+		2CC9943211471D0C005977E4 /* Hit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hit.m; sourceTree = "<group>"; };
 		2CD792DB111111B30028FFF0 /* EngineQuarterScale.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EngineQuarterScale.txt; sourceTree = "<group>"; };
 		2CD792E9111112270028FFF0 /* atom9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = atom9.txt; sourceTree = "<group>"; };
 		2CD79301111113230028FFF0 /* 3dheadHalfScaleSmooth.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3dheadHalfScaleSmooth.txt; sourceTree = "<group>"; };
@@ -100,6 +109,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2C83B12C11331CAA006A1002 /* Vec3.h */,
+				2C83B12D11331CAA006A1002 /* Vec3.m */,
+				2C83B11C11331683006A1002 /* Ray.h */,
+				2C83B11D11331683006A1002 /* Ray.m */,
+				2CC9943111471D0C005977E4 /* Hit.h */,
+				2CC9943211471D0C005977E4 /* Hit.m */,
 				2C305CF61110DB32007D9D99 /* Dataset.h */,
 				2C305CF71110DB32007D9D99 /* Dataset.m */,
 				2C596EDC10C982E900F8E9FF /* MyOpenGLView.m */,
@@ -286,6 +301,9 @@
 				2C59701910CA00AE00F8E9FF /* functions.m in Sources */,
 				2C305CF81110DB32007D9D99 /* Dataset.m in Sources */,
 				2CD794CE111200F10028FFF0 /* trackball.c in Sources */,
+				2C83B11E11331683006A1002 /* Ray.m in Sources */,
+				2C83B12E11331CAA006A1002 /* Vec3.m in Sources */,
+				2CC9943311471D0C005977E4 /* Hit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

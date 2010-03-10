@@ -7,6 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#include "Ray.h"
+#include "Hit.h"
+
+#define LERP(a,l,h)	((l)+(((h)-(l))*(a)))
 
 typedef struct {
 	double points[3][2][3]; //tripoint, point/normal, xyz, 
@@ -24,6 +28,7 @@ typedef struct {
     NSArray *scalarData;
     NSArray *dimensions;    // x, y, z
     Triangle *triangles;
+    Hit *hits;
     Vertex *vertices;
     int num_triangles;
     int num_allocated;
@@ -48,11 +53,15 @@ typedef struct {
 
 - (void)initWithContentsOfFile:(NSString *)path;
 - (void)clearData;
+- (void)computeIlluminationWithSamples:(int)samples;
+- (float)isovalueFromUnitIsovalue:(float)value;
 - (void)recalculateWithIsovalue:(float)isovalue; // recalculate triangles
 - (void)computeVertexNormals;
-- (void)renderWithSmoothing:(BOOL)smoothing; // draw triangles
+- (void)renderWithSmoothing:(BOOL)smoothing cellShading:(BOOL)cell; // draw triangles
 - (void)renderNormalsAtScale:(float)scale withSmoothing:(BOOL)smoothing;
 - (void)renderVertices;
 - (int)addTriangle:(Triangle)item;
+- (Hit *)intersectRay:(Ray *)r withIsovalue:(float)val;
+- (Hit *)intersectRay:(Ray *)r withVoxel:(Vec3 *)voxel isovalue:(float)val tin:(Vec3 *)tin tout:(Vec3 *)tout;
 
 @end

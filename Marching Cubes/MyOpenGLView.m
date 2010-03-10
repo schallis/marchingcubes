@@ -285,7 +285,7 @@ recVec gOrigin = {0.0, 0.0, 0.0};
     glColor3f(0.5f, 0.6f, 0.7f);
     glMaterialfv(GL_FRONT, GL_AMBIENT, colorBlueAmb);
     glMaterialfv(GL_FRONT, GL_DIFFUSE, colorBlueDiff);
-    glMaterialfv(GL_FRONT, GL_SPECULAR, colorBlueSpec);
+    //glMaterialfv(GL_FRONT, GL_SPECULAR, colorBlueSpec);
     glMaterialf(GL_FRONT, GL_SHININESS, 10); // 0-128
     glLightf(GL_LIGHT0, GL_CONSTANT_ATTENUATION, 1.0f);
     glLightf(GL_LIGHT0, GL_LINEAR_ATTENUATION, 0.2f);
@@ -323,9 +323,9 @@ recVec gOrigin = {0.0, 0.0, 0.0};
         }
         glColor3f(0.5f, 0.6f, 0.7f);
         if (vertexNormals > 0) {
-            [dataset renderWithSmoothing:TRUE];
+            [dataset renderWithSmoothing:TRUE cellShading:FALSE];
         } else {
-            [dataset renderWithSmoothing:FALSE];
+            [dataset renderWithSmoothing:FALSE cellShading:FALSE];
         }
         // Draw normals
         if (showNormals > 0) {
@@ -492,7 +492,7 @@ recVec gOrigin = {0.0, 0.0, 0.0};
 	glEnable(GL_LIGHT0);
 	glLightfv(GL_LIGHT0, GL_AMBIENT, LightAmbient);
 	glLightfv(GL_LIGHT0, GL_DIFFUSE, LightDiffuse);
-	glLightfv(GL_LIGHT0, GL_SPECULAR, LightSpecular);
+	//glLightfv(GL_LIGHT0, GL_SPECULAR, LightSpecular);
 	glLightfv(GL_LIGHT0, GL_POSITION, LightPosition);
 	//glEnable(GL_LIGHT1);
 	glLightfv(GL_LIGHT1, GL_AMBIENT, LightAmbient);
