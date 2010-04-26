@@ -6,6 +6,7 @@ void getFaceNormal(double *norm,double pointa[3],double pointb[3],double pointc[
 
 double Square(double num);
 double EuclideanDistance(double x1, double y1, double z1, double x2, double y2, double z2);
+double ChebyshevDistance(double x1, double y1, double z1, double x2, double y2, double z2);
 
 int rand_max(int max);
 

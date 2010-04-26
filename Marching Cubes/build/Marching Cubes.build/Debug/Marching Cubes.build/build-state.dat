@@ -1,7 +1,7 @@
 TMarching Cubes
 v7
 r0
-t289884548.047780
+t293933902.098781
 cCheck dependencies
 cProcessInfoPlistFile "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/Info.plist" "Marching Cubes-Info.plist"
 cCopyStringsFile "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
@@ -26,8 +26,9 @@ cCpResource "build/Debug/Marching Cubes.app/Contents/Resources/broken-test.txt" 
 cCpResource "build/Debug/Marching Cubes.app/Contents/Resources/circle.txt" circle.txt
 cCpResource "build/Debug/Marching Cubes.app/Contents/Resources/peak.txt" peak.txt
 cCpResource "build/Debug/Marching Cubes.app/Contents/Resources/blob.icns" blob.icns
-cProcessPCH /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-afinvzaogyagvfbwqskoxvshkhnx/MarchingCubes_Prefix.pch.gch MarchingCubes_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cProcessPCH /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-gpvexkxwqbyxvzfeqmtawnigrnef/MarchingCubes_Prefix.pch.gch MarchingCubes_Prefix.pch normal x86_64 c com.apple.compilers.gcc.4_2
+cCpResource "build/Debug/Marching Cubes.app/Contents/Resources/zplane.txt" zplane.txt
+cProcessPCH /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-eyefnzbhbjwnbxbvnaidrnoycvvt/MarchingCubes_Prefix.pch.gch MarchingCubes_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-hjmnqmzxnridzrazakzafolybelq/MarchingCubes_Prefix.pch.gch MarchingCubes_Prefix.pch normal x86_64 c com.apple.compilers.gcc.4_2
 cCompileC "build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/main.o" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/main.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
 cCompileC "build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/MarchingCubesAppDelegate.o" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubesAppDelegate.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
 cCompileC "build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/MyOpenGLView.o" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MyOpenGLView.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
@@ -37,6 +38,7 @@ cCompileC "build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/
 cCompileC "build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Ray.o" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Ray.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
 cCompileC "build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Vec3.o" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Vec3.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
 cCompileC "build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Hit.o" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Hit.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Voxel.o" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
 cLd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/MacOS/Marching Cubes" normal x86_64
 cTouch "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app"
 
@@ -106,17 +108,17 @@ t1266798507
 s341
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.h
-c000000004B9707AF00000000000007AF
-t1268189103
-s1967
+c000000004BD3AE8F00000000000008FF
+t1272163983
+s2303
 i<Cocoa/Cocoa.h>
 i"Ray.h"
 i"Hit.h"
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m
-c000000004B9711FB0000000000006556
-t1268191739
-s25942
+c000000004BD4DAEB000000000000A544
+t1272240875
+s42308
 i"Dataset.h"
 i"functions.h"
 i"mc_tables.h"
@@ -133,32 +135,32 @@ t1266798511
 s45
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/English.lproj/MainMenu.xib
-c000000004B81CFAF000000000001B95A
-t1266798511
-s112986
+c000000004BA0FDE6000000000001D012
+t1268841958
+s118802
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Hit.h
-c000000004B970F7D00000000000001D7
-t1268191101
-s471
+c000000004B9A3FB6000000000000022E
+t1268400054
+s558
 i<Cocoa/Cocoa.h>
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Hit.m
-c000000004B97100F000000000000025A
-t1268191247
-s602
+c000000004B9A3FC30000000000000293
+t1268400067
+s659
 i"Hit.h"
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubesAppDelegate.h
-c000000004B81CFAF00000000000001E3
-t1266798511
+c000000004B9A108000000000000001E3
+t1268387968
 s483
 i<Cocoa/Cocoa.h>
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubesAppDelegate.m
-c000000004B9709DE0000000000000B8D
-t1268189662
-s2957
+c000000004BD4DCC30000000000000DA9
+t1272241347
+s3497
 i"MarchingCubesAppDelegate.h"
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubes_Prefix.pch
@@ -169,9 +171,9 @@ i<Cocoa/Cocoa.h>
 i"Vec3.h"
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MyOpenGLView.h
-c000000004B81CFAF0000000000000A85
-t1266798511
-s2693
+c000000004BA105600000000000000B59
+t1268843872
+s2905
 i<Cocoa/Cocoa.h>
 i<OpenGL/gl.h>
 i<OpenGL/glext.h>
@@ -181,9 +183,9 @@ i"MarchingCubesAppDelegate.h"
 i"Dataset.h"
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MyOpenGLView.m
-c000000004B970AD30000000000004343
-t1268189907
-s17219
+c000000004BD462B70000000000004D8F
+t1272210103
+s19855
 i"MyOpenGLView.h"
 i"functions.h"
 i"trackball.h"
@@ -218,21 +220,21 @@ s439
 i<Cocoa/Cocoa.h>
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Ray.m
-c000000004B96D239000000000000034B
-t1268175417
-s843
+c000000004B98273F0000000000000391
+t1268262719
+s913
 i"Ray.h"
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Vec3.h
-c000000004B95F8910000000000000261
-t1268119697
-s609
+c000000004BA1BE68000000000000033D
+t1268891240
+s829
 i<Cocoa/Cocoa.h>
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Vec3.m
-c000000004B95F5FF0000000000000523
-t1268119039
-s1315
+c000000004BA1C96D0000000000000979
+t1268894061
+s2425
 i"Vec3.h"
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Vector3.cpp
@@ -253,6 +255,19 @@ t1266871426
 s424
 i"Vector3.h"
 
+N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.h
+c000000004BA13D890000000000000283
+t1268858249
+s643
+i<Cocoa/Cocoa.h>
+i"Dataset.h"
+
+N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m
+c000000004BA142A4000000000000054A
+t1268859556
+s1354
+i"Voxel.h"
+
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/atom9.txt
 c000000004B81CFAB0000000000005F26
 t1266798507
@@ -269,7 +284,7 @@ t1266798507
 s31
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app
-t1268191748
+t1272241030
 s102
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/Info.plist
@@ -277,8 +292,8 @@ t1266808458
 s967
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/MacOS/Marching Cubes
-t1268191748
-s145144
+t1272241030
+s166984
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/PkgInfo
 t1266808458
@@ -317,8 +332,8 @@ t1266808458
 s92
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/Resources/English.lproj/MainMenu.nib
-t1266808458
-s21624
+t1268842034
+s22946
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/Resources/atom9.txt
 t1266808458
@@ -376,49 +391,65 @@ N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Ma
 t1266808458
 s339968
 
+N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/Resources/z_plane
+t1268249025
+s46
+
+N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/Resources/z_plane.txt
+t1268253972
+s46
+
+N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/Resources/zplane.txt
+t1268254076
+s46
+
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Dataset.o
-t1268191746
-s107584
+t1272240881
+s130036
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Hit.o
-t1268191249
-s13784
+t1268891575
+s15196
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Marching Cubes.LinkFileList
-c000000004B96E730000000000000055B
-t1268180784
-s1371
+c000000004BA13D3800000000000005F0
+t1268858168
+s1520
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/MarchingCubesAppDelegate.o
-t1268189768
-s33864
+t1272241030
+s34844
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/MyOpenGLView.o
-t1268191200
-s76480
+t1272210105
+s84716
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Ray.o
-t1268181024
+t1268891575
 s13756
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Vec3.o
-t1268181024
-s17864
+t1268894066
+s23056
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Vector3.o
 t1266871418
 s11936
 
+N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Voxel.o
+t1272164016
+s16768
+
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/functions.o
-t1268181024
-s11192
+t1268891574
+s12068
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/main.o
-t1268181023
+t1268891574
 s5048
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/trackball.o
-t1268181024
+t1268891575
 s8676
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/bunny.txt
@@ -447,14 +478,14 @@ t1266798511
 s538309
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/functions.h
-c000000004B81CFAF0000000000000197
-t1266798511
-s407
+c000000004B99438A00000000000001F3
+t1268335498
+s499
 
 N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/functions.m
-c000000004B81CFAF0000000000000D85
-t1266798511
-s3461
+c000000004B9949150000000000000E8C
+t1268336917
+s3724
 i<math.h>
 i<stdlib.h>
 i"functions.h"
@@ -512,6 +543,21 @@ c000000004B81CFB10000000000053000
 t1266798513
 s339968
 
+N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/z_plane
+c000000004B97F1AA000000000000002E
+t1268249002
+s46
+
+N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/z_plane.txt
+c000000004B97F1AA000000000000002E
+t1268249002
+s46
+
+N/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/zplane.txt
+c000000004B98057A000000000000002E
+t1268254074
+s46
+
 N/var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-afinvzaogyagvfbwqskoxvshkhnx/MarchingCubes_Prefix.pch.gch
 t1268181023
 s54232880
@@ -520,8 +566,16 @@ N/var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/Shared
 t1266869228
 s2527600
 
+N/var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-eyefnzbhbjwnbxbvnaidrnoycvvt/MarchingCubes_Prefix.pch.gch
+t1268891573
+s54232880
+
 N/var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-gpvexkxwqbyxvzfeqmtawnigrnef/MarchingCubes_Prefix.pch.gch
 t1268181010
+s2208112
+
+N/var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-hjmnqmzxnridzrazakzafolybelq/MarchingCubes_Prefix.pch.gch
+t1268891512
 s2208112
 
 NMarching Cubes-Info.plist
@@ -531,11 +585,11 @@ s1014
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies289884539#289884539#0(0"0(0#1#0"4300934600#0"0#
+lSLF07#2@18"Check dependencies293933902#293933902#0(0"0(0#1#0"4300885448#0"0#
 
 CCompileC "build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Dataset.o" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s289884539.967770
-e289884546.801405
+s293933676.507770
+e293933681.274036
 r1
 xCompileC
 xbuild/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Dataset.o
@@ -545,12 +599,28 @@ xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m: In function '-[Dataset initWithContentsOfFile:]':
-o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:37: warning: format not a string literal and no format arguments
-lSLF07#2@82"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m289884539#289884546#0(266"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m: In function '-[Dataset initWithContentsOfFile:]':/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:37: warning: format not a string literal and no format arguments1(22@51"Format not a string literal and no format arguments289884544#126#140#0(6@74"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m289884539#37#0#37#0#51"format not a string literal and no format arguments0(0#0#74"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m4300934600#1971"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-afinvzaogyagvfbwqskoxvshkhnx/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Dataset.o"0#
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:50: warning: format not a string literal and no format arguments
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m: In function '-[Dataset computeIlluminationWithSamples:fromCamera:confined:]':
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:131: warning: unused variable 'iso'
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:130: warning: unused variable 'z'
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:129: warning: unused variable 'y'
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:128: warning: unused variable 'x'
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:249: warning: excess elements in scalar initializer
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:249: warning: (near initialization for 'gr')
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:249: warning: excess elements in scalar initializer
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:249: warning: (near initialization for 'gr')
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:249: warning: excess elements in scalar initializer
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:249: warning: (near initialization for 'gr')
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m: In function '-[Dataset trilinearInterpolationWithPosition:inVoxel:]':
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:662: warning: unused variable 'value'
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:661: warning: unused variable 'outz'
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:661: warning: unused variable 'outy'
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:661: warning: unused variable 'outx'
+lSLF07#2@82"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m293933676#293933681#0(2194"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m: In function '-[Dataset initWithContentsOfFile:]':/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:50: warning: format not a string literal and no format arguments/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m: In function '-[Dataset computeIlluminationWithSamples:fromCamera:confined:]':/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:131: warning: unused variable 'iso'/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:130: warning: unused variable 'z'/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:129: warning: unused variable 'y'/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:128: warning: unused variable 'x'/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:249: warning: excess elements in scalar initializer/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:249: warning: (near initialization for 'gr')/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:249: warning: excess elements in scalar initializer/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:249: warning: (near initialization for 'gr')/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:249: warning: excess elements in scalar initializer/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:249: warning: (near initialization for 'gr')/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m: In function '-[Dataset trilinearInterpolationWithPosition:inVoxel:]':/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:662: warning: unused variable 'value'/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:661: warning: unused variable 'outz'/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:661: warning: unused variable 'outy'/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m:661: warning: unused variable 'outx'15(22@51"Format not a string literal and no format arguments293933680#126#140#0(6@74"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m293933675#50#0#50#0#51"format not a string literal and no format arguments0(22@21"Unused variable 'iso'293933680#420#111#0(6@74"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m293933675#131#0#131#0#19"unused variable '*'0(22@19"Unused variable 'z'293933680#531#109#0(6@74"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m293933675#130#0#130#0#19"unused variable '*'0(22@19"Unused variable 'y'293933680#640#109#0(6@74"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m293933675#129#0#129#0#19"unused variable '*'0(22@19"Unused variable 'x'293933680#749#109#0(6@74"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m293933675#128#0#128#0#19"unused variable '*'0(22@37"Excess elements in scalar initializer293933680#858#127#0(6@74"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m293933675#249#0#249#0#0"0(22@30"(near initialization for 'gr')293933680#985#120#0(6@74"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m293933675#249#0#249#0#0"0(22@37"Excess elements in scalar initializer293933680#1105#127#0(6@74"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m293933675#249#0#249#0#0"0(22@30"(near initialization for 'gr')293933680#1232#120#0(6@74"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m293933675#249#0#249#0#0"0(22@37"Excess elements in scalar initializer293933680#1352#127#0(6@74"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m293933675#249#0#249#0#0"0(22@30"(near initialization for 'gr')293933680#1479#120#0(6@74"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m293933675#249#0#249#0#0"0(22@23"Unused variable 'value'293933680#1745#113#0(6@74"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m293933675#662#0#662#0#19"unused variable '*'0(22@22"Unused variable 'outz'293933680#1858#112#0(6@74"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m293933675#661#0#661#0#19"unused variable '*'0(22@22"Unused variable 'outy'293933680#1970#112#0(6@74"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m293933675#661#0#661#0#19"unused variable '*'0(22@22"Unused variable 'outx'293933680#2082#112#0(6@74"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m293933675#661#0#661#0#19"unused variable '*'0(0#0#74"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m4300885448#1971"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-eyefnzbhbjwnbxbvnaidrnoycvvt/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Dataset.m" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Dataset.o"0#
 
 CCompileC "build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Hit.o" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Hit.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s289884049.308931
-e289884049.507284
+s290584375.353167
+e290584375.566919
 r1
 xCompileC
 xbuild/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Hit.o
@@ -559,11 +629,11 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@78"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Hit.m289884049#289884049#0(0"0(0#0#70"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Hit.m4300934600#1963"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-afinvzaogyagvfbwqskoxvshkhnx/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Hit.m" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Hit.o"0#
+lSLF07#2@78"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Hit.m290584375#290584375#0(0"0(0#0#70"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Hit.m4300934600#1963"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-eyefnzbhbjwnbxbvnaidrnoycvvt/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Hit.m" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Hit.o"0#
 
 CCompileC "build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/MarchingCubesAppDelegate.o" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubesAppDelegate.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s289882568.485511
-e289882568.769968
+s293933829.882607
+e293933830.395489
 r1
 xCompileC
 xbuild/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/MarchingCubesAppDelegate.o
@@ -572,11 +642,11 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@99"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubesAppDelegate.m289882568#289882568#0(0"0(0#0#91"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubesAppDelegate.m4300934600#2005"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-afinvzaogyagvfbwqskoxvshkhnx/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubesAppDelegate.m" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/MarchingCubesAppDelegate.o"0#
+lSLF07#2@99"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubesAppDelegate.m293933829#293933830#0(0"0(0#0#91"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubesAppDelegate.m4300885448#2005"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-eyefnzbhbjwnbxbvnaidrnoycvvt/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubesAppDelegate.m" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/MarchingCubesAppDelegate.o"0#
 
 CCompileC "build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/MyOpenGLView.o" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MyOpenGLView.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s289884000.099824
-e289884000.680306
+s293902904.847757
+e293902905.489412
 r1
 xCompileC
 xbuild/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/MyOpenGLView.o
@@ -587,11 +657,11 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MyOpenGLView.m: In function '+[MyOpenGLView basicPixelFormat]':
 o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MyOpenGLView.m:59: warning: cast from pointer to integer of different size
-lSLF07#2@87"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MyOpenGLView.m289884000#289884000#0(269"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MyOpenGLView.m: In function '+[MyOpenGLView basicPixelFormat]':/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MyOpenGLView.m:59: warning: cast from pointer to integer of different size1(22@46"Cast from pointer to integer of different size289884000#129#140#0(6@79"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MyOpenGLView.m289882707#59#0#59#0#46"cast from pointer to integer of different size0(0#0#79"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MyOpenGLView.m4300934600#1981"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-afinvzaogyagvfbwqskoxvshkhnx/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MyOpenGLView.m" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/MyOpenGLView.o"0#
+lSLF07#2@87"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MyOpenGLView.m293902904#293902905#0(269"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MyOpenGLView.m: In function '+[MyOpenGLView basicPixelFormat]':/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MyOpenGLView.m:59: warning: cast from pointer to integer of different size1(22@46"Cast from pointer to integer of different size293902905#129#140#0(6@79"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MyOpenGLView.m293902903#59#0#59#0#46"cast from pointer to integer of different size0(0#0#79"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MyOpenGLView.m4300885448#1981"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-eyefnzbhbjwnbxbvnaidrnoycvvt/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MyOpenGLView.m" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/MyOpenGLView.o"0#
 
 CCompileC "build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Ray.o" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Ray.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s289873824.489365
-e289873824.738909
+s290584375.079207
+e290584375.293113
 r1
 xCompileC
 xbuild/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Ray.o
@@ -600,11 +670,11 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@78"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Ray.m289873824#289873824#0(0"0(0#0#70"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Ray.m4300934600#1963"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-afinvzaogyagvfbwqskoxvshkhnx/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Ray.m" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Ray.o"0#
+lSLF07#2@78"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Ray.m290584375#290584375#0(0"0(0#0#70"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Ray.m4300934600#1963"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-eyefnzbhbjwnbxbvnaidrnoycvvt/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Ray.m" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Ray.o"0#
 
 CCompileC "build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Vec3.o" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Vec3.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s289873824.492056
-e289873824.807173
+s290586866.031264
+e290586866.576068
 r1
 xCompileC
 xbuild/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Vec3.o
@@ -613,7 +683,7 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@79"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Vec3.m289873824#289873824#0(0"0(0#0#71"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Vec3.m4300934600#1965"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-afinvzaogyagvfbwqskoxvshkhnx/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Vec3.m" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Vec3.o"0#
+lSLF07#2@79"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Vec3.m290586866#290586866#0(0"0(0#0#71"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Vec3.m4300934600#1965"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-eyefnzbhbjwnbxbvnaidrnoycvvt/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Vec3.m" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Vec3.o"0#
 
 CCompileC "build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Vector3.o" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Vector3.cpp" normal x86_64 c++ com.apple.compilers.gcc.4_2
 s288562028.609648
@@ -644,9 +714,33 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@82"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Vector3.m288564218#288564218#0(0"0(0#0#74"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Vector3.m4300934600#1971"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-afinvzaogyagvfbwqskoxvshkhnx/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Vector3.m" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Vector3.o"0#
 
+CCompileC "build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Voxel.o" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s293856816.582101
+e293856816.856081
+r1
+xCompileC
+xbuild/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Voxel.o
+x/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m: In function '+[Voxel initWithPosition:andDataset:]':
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:17: warning: instance variable 'position' accessed in class method
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:43: warning: instance variable 'v0' accessed in class method
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:44: warning: instance variable 'v1' accessed in class method
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:45: warning: instance variable 'v2' accessed in class method
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:46: warning: instance variable 'v3' accessed in class method
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:47: warning: instance variable 'v4' accessed in class method
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:48: warning: instance variable 'v5' accessed in class method
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:49: warning: instance variable 'v6' accessed in class method
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:50: warning: instance variable 'v7' accessed in class method
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:51: warning: control reaches end of non-void function
+lSLF07#2@80"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m293856816#293856816#0(1466"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m: In function '+[Voxel initWithPosition:andDataset:]':/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:17: warning: instance variable 'position' accessed in class method/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:43: warning: instance variable 'v0' accessed in class method/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:44: warning: instance variable 'v1' accessed in class method/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:45: warning: instance variable 'v2' accessed in class method/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:46: warning: instance variable 'v3' accessed in class method/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:47: warning: instance variable 'v4' accessed in class method/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:48: warning: instance variable 'v5' accessed in class method/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:49: warning: instance variable 'v6' accessed in class method/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:50: warning: instance variable 'v7' accessed in class method/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m:51: warning: control reaches end of non-void function10(22@53"Instance variable 'position' accessed in class method293856816#127#140#0(6@72"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m290552356#17#0#17#0#0"0(22@47"Instance variable 'v0' accessed in class method293856816#267#134#0(6@72"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m290552356#43#0#43#0#0"0(22@47"Instance variable 'v1' accessed in class method293856816#401#134#0(6@72"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m290552356#44#0#44#0#0"0(22@47"Instance variable 'v2' accessed in class method293856816#535#134#0(6@72"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m290552356#45#0#45#0#0"0(22@47"Instance variable 'v3' accessed in class method293856816#669#134#0(6@72"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m290552356#46#0#46#0#0"0(22@47"Instance variable 'v4' accessed in class method293856816#803#134#0(6@72"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m290552356#47#0#47#0#0"0(22@47"Instance variable 'v5' accessed in class method293856816#937#134#0(6@72"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m290552356#48#0#48#0#0"0(22@47"Instance variable 'v6' accessed in class method293856816#1071#134#0(6@72"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m290552356#49#0#49#0#0"0(22@47"Instance variable 'v7' accessed in class method293856816#1205#134#0(6@72"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m290552356#50#0#50#0#0"0(22@40"Control reaches end of non-void function293856816#1339#127#0(6@72"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m290552356#51#0#51#0#40"control reaches end of non-void function0(0#0#72"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m4300885448#1967"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-eyefnzbhbjwnbxbvnaidrnoycvvt/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/Voxel.m" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Voxel.o"0#
+
 CCompileC "build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/functions.o" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/functions.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s289873823.923549
-e289873824.131167
+s290584374.457532
+e290584374.712403
 r1
 xCompileC
 xbuild/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/functions.o
@@ -655,11 +749,11 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@84"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/functions.m289873823#289873824#0(0"0(0#0#76"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/functions.m4300934600#1975"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-afinvzaogyagvfbwqskoxvshkhnx/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/functions.m" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/functions.o"0#
+lSLF07#2@84"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/functions.m290584374#290584374#0(0"0(0#0#76"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/functions.m4300934600#1975"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-eyefnzbhbjwnbxbvnaidrnoycvvt/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/functions.m" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/functions.o"0#
 
 CCompileC "build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/main.o" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/main.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s289873823.380632
-e289873823.921740
+s290584373.725899
+e290584374.448610
 r1
 xCompileC
 xbuild/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/main.o
@@ -668,11 +762,11 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@79"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/main.m289873823#289873823#0(0"0(0#0#71"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/main.m4300934600#1965"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-afinvzaogyagvfbwqskoxvshkhnx/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/main.m" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/main.o"0#
+lSLF07#2@79"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/main.m290584373#290584374#0(0"0(0#0#71"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/main.m4300934600#1965"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-eyefnzbhbjwnbxbvnaidrnoycvvt/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/main.m" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/main.o"0#
 
 CCompileC "build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/trackball.o" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/trackball.c" normal x86_64 c com.apple.compilers.gcc.4_2
-s289873824.256638
-e289873824.489247
+s290584375.036453
+e290584375.353045
 r1
 xCompileC
 xbuild/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/trackball.o
@@ -681,20 +775,20 @@ xnormal
 xx86_64
 xc
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@84"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/trackball.c289873824#289873824#0(0"0(0#0#76"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/trackball.c4300934600#1965"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-gpvexkxwqbyxvzfeqmtawnigrnef/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/trackball.c" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/trackball.o"0#
+lSLF07#2@84"Compile /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/trackball.c290584375#290584375#0(0"0(0#0#76"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/trackball.c4300934600#1965"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -include /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-hjmnqmzxnridzrazakzafolybelq/MarchingCubes_Prefix.pch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/trackball.c" -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/trackball.o"0#
 
 CCompileXIB "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/English.lproj/MainMenu.xib"
-s288501258.295746
-e288501258.901206
+s290534833.822500
+e290534834.305688
 r1
 xCompileXIB
 x/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/English.lproj/MainMenu.xib
-o2010-02-22 03:14:18.794 ibtool[17607:607] *** WARNING: Method attributes in class NSOpenGLPixelFormat is obsolete and will be removed in a future release. ***
-o2010-02-22 03:14:18.797 ibtool[17607:607] *** WARNING: Method setAttributes: in class NSOpenGLPixelFormat is obsolete and will be removed in a future release. ***
+o2010-03-17 16:07:14.200 ibtool[65373:607] *** WARNING: Method attributes in class NSOpenGLPixelFormat is obsolete and will be removed in a future release. ***
+o2010-03-17 16:07:14.202 ibtool[65373:607] *** WARNING: Method setAttributes: in class NSOpenGLPixelFormat is obsolete and will be removed in a future release. ***
 o/* com.apple.ibtool.document.notices */
-o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/English.lproj/MainMenu.xib:888: note: This view is clipping its content.
 o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/English.lproj/MainMenu.xib:859: note: This view is clipping its content.
-lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib288501258#288501258#0(638"2010-02-22 03:14:18.794 ibtool[17607:607] *** WARNING: Method attributes in class NSOpenGLPixelFormat is obsolete and will be removed in a future release. ***2010-02-22 03:14:18.797 ibtool[17607:607] *** WARNING: Method setAttributes: in class NSOpenGLPixelFormat is obsolete and will be removed in a future release. ***/* com.apple.ibtool.document.notices *//Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/English.lproj/MainMenu.xib:888: note: This view is clipping its content./Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/English.lproj/MainMenu.xib:859: note: This view is clipping its content.2(13@34"This view is clipping its content.288501258#18446744073709551615#0#0(6@91"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/English.lproj/MainMenu.xib288491311#888#0#888#0#0"0(13@34"This view is clipping its content.288501258#18446744073709551615#0#0(6@91"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/English.lproj/MainMenu.xib288491311#859#0#859#0#0"0(0#0#91"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/English.lproj/MainMenu.xib4300934600#418"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/Resources/English.lproj/MainMenu.nib" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/English.lproj/MainMenu.xib"0#
+o/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/English.lproj/MainMenu.xib:888: note: This view is clipping its content.
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib290534833#290534834#0(638"2010-03-17 16:07:14.200 ibtool[65373:607] *** WARNING: Method attributes in class NSOpenGLPixelFormat is obsolete and will be removed in a future release. ***2010-03-17 16:07:14.202 ibtool[65373:607] *** WARNING: Method setAttributes: in class NSOpenGLPixelFormat is obsolete and will be removed in a future release. ***/* com.apple.ibtool.document.notices *//Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/English.lproj/MainMenu.xib:859: note: This view is clipping its content./Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/English.lproj/MainMenu.xib:888: note: This view is clipping its content.2(13@34"This view is clipping its content.290534834#18446744073709551615#0#0(6@91"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/English.lproj/MainMenu.xib290534758#859#0#859#0#0"0(13@34"This view is clipping its content.290534834#18446744073709551615#0#0(6@91"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/English.lproj/MainMenu.xib290534758#888#0#888#0#0"0(0#0#91"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/English.lproj/MainMenu.xib4300934600#418"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/Resources/English.lproj/MainMenu.nib" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/English.lproj/MainMenu.xib"0#
 
 CCopyStringsFile "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
 s288501258.265193
@@ -894,15 +988,42 @@ xbuild/Debug/Marching Cubes.app/Contents/Resources/uncbrainsmall.txt
 xuncbrainsmall.txt
 lSLF07#2@22"Copy uncbrainsmall.txt288501258#288501258#0(0"0(0#0#82"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/uncbrainsmall.txt4300934600#424"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/uncbrainsmall.txt" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/Resources"0#
 
+CCpResource "build/Debug/Marching Cubes.app/Contents/Resources/z_plane" z_plane
+s289941825.588167
+e289941825.749749
+r1
+xCpResource
+xbuild/Debug/Marching Cubes.app/Contents/Resources/z_plane
+xz_plane
+lSLF07#2@12"Copy z_plane289941825#289941825#0(0"0(0#0#72"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/z_plane4300934600#414"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/z_plane" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/Resources"0#
+
+CCpResource "build/Debug/Marching Cubes.app/Contents/Resources/z_plane.txt" z_plane.txt
+s289946772.734086
+e289946772.802492
+r1
+xCpResource
+xbuild/Debug/Marching Cubes.app/Contents/Resources/z_plane.txt
+xz_plane.txt
+lSLF07#2@16"Copy z_plane.txt289946772#289946772#0(0"0(0#0#76"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/z_plane.txt4300934600#418"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/z_plane.txt" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/Resources"0#
+
+CCpResource "build/Debug/Marching Cubes.app/Contents/Resources/zplane.txt" zplane.txt
+s289946876.757016
+e289946876.763563
+r1
+xCpResource
+xbuild/Debug/Marching Cubes.app/Contents/Resources/zplane.txt
+xzplane.txt
+lSLF07#2@15"Copy zplane.txt289946876#289946876#0(0"0(0#0#75"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/zplane.txt4300934600#417"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/zplane.txt" "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/Resources"0#
+
 CLd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/MacOS/Marching Cubes" normal x86_64
-s289884546.801673
-e289884548.030031
+s293933830.395584
+e293933830.456355
 r1
 xLd
 x/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/MacOS/Marching Cubes
 xnormal
 xx86_64
-lSLF07#2@130"Link /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/MacOS/Marching Cubes289884546#289884548#0(0"0(0#0#0"4300934600#804"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" -filelist "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Marching Cubes.LinkFileList" -mmacosx-version-min=10.6 -framework Cocoa -framework OpenGL -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/MacOS/Marching Cubes"0#
+lSLF07#2@130"Link /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/MacOS/Marching Cubes293933830#293933830#0(0"0(0#0#0"4300885448#804"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" -filelist "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Objects-normal/x86_64/Marching Cubes.LinkFileList" -mmacosx-version-min=10.6 -framework Cocoa -framework OpenGL -o "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/MacOS/Marching Cubes"0#
 
 CProcessInfoPlistFile "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app/Contents/Info.plist" "Marching Cubes-Info.plist"
 s288501258.226432
@@ -926,6 +1047,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@35"Precompile MarchingCubes_Prefix.pch289873808#289873823#0(0"0(0#0#89"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubes_Prefix.pch4300934600#1835"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubes_Prefix.pch" -o /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-afinvzaogyagvfbwqskoxvshkhnx/MarchingCubes_Prefix.pch.gch0#
 
+CProcessPCH /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-eyefnzbhbjwnbxbvnaidrnoycvvt/MarchingCubes_Prefix.pch.gch MarchingCubes_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s290584310.797855
+e290584373.725692
+r1
+xProcessPCH
+x/var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-eyefnzbhbjwnbxbvnaidrnoycvvt/MarchingCubes_Prefix.pch.gch
+xMarchingCubes_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@35"Precompile MarchingCubes_Prefix.pch290584310#290584373#0(0"0(0#0#89"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubes_Prefix.pch4300934600#1835"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubes_Prefix.pch" -o /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-eyefnzbhbjwnbxbvnaidrnoycvvt/MarchingCubes_Prefix.pch.gch0#
+
 CProcessPCH /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-gpvexkxwqbyxvzfeqmtawnigrnef/MarchingCubes_Prefix.pch.gch MarchingCubes_Prefix.pch normal x86_64 c com.apple.compilers.gcc.4_2
 s289873808.986293
 e289873810.708632
@@ -938,6 +1072,19 @@ xx86_64
 xc
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@35"Precompile MarchingCubes_Prefix.pch289873808#289873810#0(0"0(0#0#89"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubes_Prefix.pch4300934600#1825"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubes_Prefix.pch" -o /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-gpvexkxwqbyxvzfeqmtawnigrnef/MarchingCubes_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-hjmnqmzxnridzrazakzafolybelq/MarchingCubes_Prefix.pch.gch MarchingCubes_Prefix.pch normal x86_64 c com.apple.compilers.gcc.4_2
+s290584310.869153
+e290584315.500737
+r1
+xProcessPCH
+x/var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-hjmnqmzxnridzrazakzafolybelq/MarchingCubes_Prefix.pch.gch
+xMarchingCubes_Prefix.pch
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@35"Precompile MarchingCubes_Prefix.pch290584310#290584315#0(0"0(0#0#89"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubes_Prefix.pch4300934600#1825"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubes_Prefix.pch" -o /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-hjmnqmzxnridzrazakzafolybelq/MarchingCubes_Prefix.pch.gch0#
 
 CProcessPCH++ /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-cyyihtkdlbnrveccjgwnhvkhzxyh/MarchingCubes_Prefix.pch.gch MarchingCubes_Prefix.pch normal x86_64 c++ com.apple.compilers.gcc.4_2
 s288562028.015448
@@ -953,10 +1100,10 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@35"Precompile MarchingCubes_Prefix.pch288562028#288562028#0(0"0(0#0#89"/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubes_Prefix.pch3419202321905706496#1844"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++-header -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-generated-files.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-own-target-headers.hmap" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-all-target-headers.hmap" -iquote "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/Marching Cubes-project-headers.hmap" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug" "-F/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/include" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources/x86_64" "-I/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Marching Cubes.build/Debug/Marching Cubes.build/DerivedSources" -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/MarchingCubes_Prefix.pch" -o /var/folders/Ei/Ei-UK3g5EkqGV3v24jt3K++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MarchingCubes_Prefix-cyyihtkdlbnrveccjgwnhvkhzxyh/MarchingCubes_Prefix.pch.gch0#
 
 CTouch "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app"
-s289884548.030144
-e289884548.047723
+s293933830.456460
+e293933830.462594
 r1
 xTouch
 x/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app
-lSLF07#2@101"Touch /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app289884548#289884548#0(0"0(0#0#0"4300934600#194"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    /usr/bin/touch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app"0#
+lSLF07#2@101"Touch /Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app293933830#293933830#0(0"0(0#0#0"4300885448#194"    cd "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes"    /usr/bin/touch -c "/Users/stevechallis/Documents/repos/marchingcubes/Marching Cubes/build/Debug/Marching Cubes.app"0#
 

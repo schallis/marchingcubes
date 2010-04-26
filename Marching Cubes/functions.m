@@ -85,6 +85,18 @@ double EuclideanDistance(double x1, double y1, double z1, double x2, double y2, 
     return distance;
 }
 
+double ChebyshevDistance(double x1, double y1, double z1, double x2, double y2, double z2)
+{
+    double r1 = fabs(x1-x2);
+    double r2 = fabs(y1-y2);
+    double r3 = fabs(z1-z2);
+    
+    double temp = (r2 > r3 ? r2 : r3);
+    return r1 > temp ? r1 : temp;
+}
+
+
+
 // simple cube data
 GLint cube_num_vertices = 8;
 

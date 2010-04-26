@@ -16,6 +16,7 @@
     waveList = [[NSArray alloc] initWithObjects:
                 [NSDictionary dictionaryWithObjectsAndKeys:@"Test", @"name", @"test.txt", @"value", nil],
                 [NSDictionary dictionaryWithObjectsAndKeys:@"Circle", @"name", @"circle.txt", @"value", nil],
+                [NSDictionary dictionaryWithObjectsAndKeys:@"Z Plane", @"name", @"zplane.txt", @"value", nil],
                 [NSDictionary dictionaryWithObjectsAndKeys:@"Peak", @"name", @"peak.txt", @"value", nil],
                 [NSDictionary dictionaryWithObjectsAndKeys:@"Broken Test", @"name", @"broken-test.txt", @"value", nil],
                 [NSDictionary dictionaryWithObjectsAndKeys:@"Atom", @"name", @"atom9.txt", @"value", nil],
@@ -36,7 +37,10 @@
     surfaceList = [[NSArray alloc] initWithObjects:
                    [NSDictionary dictionaryWithObjectsAndKeys:@"Solid", @"name", @"solid", @"value", nil],
                    [NSDictionary dictionaryWithObjectsAndKeys:@"Lines", @"name", @"lines", @"value", nil],
-                   [NSDictionary dictionaryWithObjectsAndKeys:@"Illumination", @"name", @"illumination", @"value", nil],
+                   [NSDictionary dictionaryWithObjectsAndKeys:@"Illumination (from camera)", @"name", @"illumination", @"value", nil],
+                   //[NSDictionary dictionaryWithObjectsAndKeys:@"Illumination (confined)", @"name", @"illumination-confined", @"value", nil],
+                   [NSDictionary dictionaryWithObjectsAndKeys:@"Illumination (uniform)", @"name", @"illumination-uniform", @"value", nil],
+                   [NSDictionary dictionaryWithObjectsAndKeys:@"Illumination Solid", @"name", @"illumination-solid", @"value", nil],
                    [NSDictionary dictionaryWithObjectsAndKeys:@"None", @"name", @"none", @"value", nil],
                    nil]; // don't forget the nil!
     

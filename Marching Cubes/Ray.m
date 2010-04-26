@@ -26,9 +26,10 @@
 }
 
 - (Vec3 *)pointAtParamater:(float)t {
-    Vec3* new = [[Vec3 alloc] initiWithX:[direction x]*t+[origin x]
+    Vec3 *new = [[Vec3 alloc] initiWithX:[direction x]*t+[origin x]
                                        Y:[direction y]*t+[origin y]
                                        Z:[direction z]*t+[origin z]];
+    //NSLog(@"%f * %f + %@ = %f", [direction z], t, origin, [new z]);
     return new;
 }
 

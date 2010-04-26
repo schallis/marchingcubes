@@ -14,6 +14,7 @@
 
 typedef struct {
 	double points[3][2][3]; //tripoint, point/normal, xyz, 
+    double nn_points[3][2][3];
     double normal[3];
 } Triangle;
 
@@ -53,15 +54,18 @@ typedef struct {
 
 - (void)initWithContentsOfFile:(NSString *)path;
 - (void)clearData;
-- (void)computeIlluminationWithSamples:(int)samples;
+- (NSMutableArray *)shepardInterpolateGrid:(NSMutableArray *)grid;
+- (void)computeIlluminationWithSamples:(int)samples fromCamera:(BOOL)fromCamera confined:(BOOL)confined;
 - (float)isovalueFromUnitIsovalue:(float)value;
 - (void)recalculateWithIsovalue:(float)isovalue; // recalculate triangles
 - (void)computeVertexNormals;
 - (void)renderWithSmoothing:(BOOL)smoothing cellShading:(BOOL)cell; // draw triangles
 - (void)renderNormalsAtScale:(float)scale withSmoothing:(BOOL)smoothing;
 - (void)renderVertices;
-- (void)renderIllumination;
+- (void)renderIlluminationWithNormals:(BOOL)normals confined:(BOOL)confined;
+- (float)trilinearInterpolationWithPosition:(Vec3 *)position inVoxel:(Vec3 *)voxel;
 - (int)addTriangle:(Triangle)item;
+- (Vec3 *)voxelFromX:(float)x Y:(float)y Z:(float)z;
 - (Hit *)intersectRay:(Ray *)r withIsovalue:(float)val;
 - (Hit *)intersectRay:(Ray *)r withVoxel:(Vec3 *)voxel isovalue:(float)val tin:(Vec3 *)tin tout:(Vec3 *)tout;
 

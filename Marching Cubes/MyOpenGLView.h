@@ -31,6 +31,10 @@ typedef struct {
     NSWindow *startingWindow;
     BOOL fullscreenOn;
     
+    IBOutlet NSProgressIndicator *spinner;
+    IBOutlet NSTextField *label;
+    IBOutlet NSObjectController *colorController;
+    
 	NSTimer *timer;
 	CFAbsoluteTime time;
     
@@ -63,6 +67,8 @@ typedef struct {
 - (IBAction) scale:(id)obj;
 - (void) setScale:(float)newScale;
 - (IBAction) isoValue:(id)obj;
+- (void)updateStatusWithMessage:(NSString *)message;
+- (void)updateIllumination;
 - (void) setIsoValue:(float)newIsoValue;
 - (IBAction) changeWave:(id)obj;
 - (IBAction) changeSurface:(id)obj;

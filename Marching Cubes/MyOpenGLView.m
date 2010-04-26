@@ -22,7 +22,7 @@ MyOpenGLView * gTrackingViewInfo = NULL;
 GLfloat LightAmbient[4] = {0.4f, 0.4f, 0.4f, 1.0f}; 
 GLfloat LightDiffuse[4] = {0.9f, 0.9f, 0.9f, 1.0f};
 GLfloat LightSpecular[4] = {0.2f, 0.2f, 0.2f, 1.0f};
-GLfloat LightPosition[4] = {0.4f, 1.2f, -0.7f, 1.0f};
+GLfloat LightPosition[4] = {0.4f, 1.2f, -1.0f, 1.0f};
 GLfloat LightPosition2[4] = {0.0f, 1.5f, -0.9f, 1.0f};
 float colorBlueAmb[4] = {0.6, 0.7, 0.8, 1.0};
 float colorBlueDiff[4] = {0.73, 0.74, 0.74, 1.0};
@@ -79,23 +79,56 @@ recVec gOrigin = {0.0, 0.0, 0.0};
 	objIsoValue = (GLfloat)newIsoValue;
 }
 
+- (void)updateStatusWithMessage:(NSString *)message {
+    [label setStringValue:message];
+    //[label textDidChange:[NSNotification notificationWithName:@"NSControlTextDidChangeNotification." object:message]];
+}
+
 // change the function used to render the surface
 - (IBAction) changeWave:(id)obj {
+    [spinner startAnimation:self];
+    
+    [self updateStatusWithMessage:@"Loading dataset ..."];
     NSString *file = [[obj selectedItem] representedObject];
     [self setDataset:[[Dataset alloc] init]];
-    NSLog(@"Changing dataset ...");
     [dataset initWithContentsOfFile:[@"../../" stringByAppendingString:file]];
-    NSLog(@"Changed!");
+    
+    [self updateStatusWithMessage:@"Extracting isosurface ..."];
     [dataset recalculateWithIsovalue:objIsoValue];
-    NSLog(@"Recalculated!");
-    //NSLog(@"%@", file);
-    //NSLog(@"%d %d", [[[dataset dimensions] objectAtIndex:1] intValue], [[dataset scalarData] count]);
+    
+    [self updateIllumination];
+    
+    [self updateStatusWithMessage:@""];
+    [spinner stopAnimation:self];
 }
 
 // change the type of the surface
 - (IBAction) changeSurface:(id)obj {
+    [spinner startAnimation:self];
+    
     [self setSurfaceType:[[obj selectedItem] representedObject]];
     //NSLog(@"%@", [self surfaceType]);
+    [self updateIllumination];
+    
+    [spinner stopAnimation:self];
+}
+
+- (void)updateIllumination {
+    int samples = 10000;
+    [self updateStatusWithMessage:@"Updating illumination ..."];
+    if (surfaceType == @"illumination") {
+        [dataset computeIlluminationWithSamples:samples fromCamera:TRUE confined:FALSE];
+    }
+    if (surfaceType == @"illumination-confined") {
+        [dataset computeIlluminationWithSamples:samples fromCamera:FALSE confined:TRUE];
+    }
+    if (surfaceType == @"illumination-uniform") {
+        [dataset computeIlluminationWithSamples:samples fromCamera:FALSE confined:FALSE];
+    }
+    if (surfaceType == @"illumination-solid") {
+        [dataset computeIlluminationWithSamples:samples fromCamera:FALSE confined:FALSE];
+    }
+    [self updateStatusWithMessage:@""];
 }
 
 // change the type of the surface
@@ -281,7 +314,7 @@ recVec gOrigin = {0.0, 0.0, 0.0};
     
     // Basic drawing properties
     glLineWidth(1.0);
-    glPointSize(1.0);
+    glPointSize(2.0);
     glColor3f(0.5f, 0.6f, 0.7f);
     glMaterialfv(GL_FRONT, GL_AMBIENT, colorBlueAmb);
     glMaterialfv(GL_FRONT, GL_DIFFUSE, colorBlueDiff);
@@ -297,34 +330,72 @@ recVec gOrigin = {0.0, 0.0, 0.0};
     glLightfv(GL_LIGHT0, GL_POSITION, LightPosition);
     
     // Draw light source
-    glColor3f(1.0, 1.0, 0.0);
-    drawCube(1, 0.1, LightPosition);
+    //glColor3f(1.0, 1.0, 0.0);
+    //drawCube(1, 0.1, LightPosition);
     
+    // Properly scale datasets
     int x = (int)[[[dataset dimensions] objectAtIndex:0] intValue];
     int y = (int)[[[dataset dimensions] objectAtIndex:1] intValue];
     int z = (int)[[[dataset dimensions] objectAtIndex:2] intValue];
     float max = (float) x > y ? x : y;
     max = (float) max > z ? max : z;
     glScalef(x/max, y/max, z/max);
+    glMatrixMode(GL_TEXTURE);
+    glLoadIdentity();
+    glScalef(x/max, y/max, z/max);
+    glMatrixMode(GL_MODELVIEW);
+    
     
     // Draw bounding box
     if (showBox > 0) {
         glColor3f(0.7f, 0.0f, 0.0f);
         GLfloat pos[3] = {0.0,0.0,0.0};
         drawCube(0, 0.5, pos);
+        // Draw axis lines
+        // x
+        glColor3f(1.0, 1.0, 0.0);
+        glBegin(GL_LINES);
+        glVertex3f(-0.6, -0.6, -0.6);
+        glVertex3f(-0.3, -0.6, -0.6);
+        glEnd();
+        // y
+        glColor3f(1.0, 0.0, 1.0);
+        glBegin(GL_LINES);
+        glVertex3f(-0.6, -0.6, -0.6);
+        glVertex3f(-0.6, -0.3, -0.6);
+        glEnd();
+        // z
+        glColor3f(0.0, 1.0, 1.0);
+        glBegin(GL_LINES);
+        glVertex3f(-0.6, -0.6, -0.6);
+        glVertex3f(-0.6, -0.6, -0.3);
+        glEnd();
     }
     
     // Draw surface
     if (surfaceType != @"none") {
-        if (surfaceType == @"solid") {
+        if (surfaceType == @"solid" || surfaceType == @"illumination-solid") {
             glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
         } else {
             glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
         }
         if (surfaceType == @"illumination") {
-            [dataset renderIllumination];
+            if (showNormals > 0) {
+                [dataset renderIlluminationWithNormals:TRUE confined:TRUE];
+            } else {
+                [dataset renderIlluminationWithNormals:FALSE confined:TRUE];
+            }
+        } else if (surfaceType == @"illumination-confined" ||
+                   surfaceType == @"illumination-uniform") {
+            if (showNormals > 0) {
+                [dataset renderIlluminationWithNormals:TRUE confined:FALSE];
+            } else {
+                [dataset renderIlluminationWithNormals:FALSE confined:FALSE];
+            }
+        } else if (surfaceType == @"illumination-solid") {
+            [dataset renderWithSmoothing:TRUE cellShading:TRUE];
         } else {
-            glColor3f(0.5f, 0.6f, 0.7f);
+            glColor3f(0.7f, 0.7f, 0.7f);
             if (vertexNormals > 0) {
                 [dataset renderWithSmoothing:TRUE cellShading:FALSE];
             } else {
@@ -490,6 +561,9 @@ recVec gOrigin = {0.0, 0.0, 0.0};
 	glPolygonOffset (1.0f, 1.0f);
     //glEnable(GL_BLEND);
     //glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    
+    //glEnable(GL_TEXTURE_3D);
+    glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_REPLACE);
 	
 	// Put the lights up
 	glEnable(GL_LIGHTING);
@@ -504,7 +578,7 @@ recVec gOrigin = {0.0, 0.0, 0.0};
 	glLightfv(GL_LIGHT1, GL_SPECULAR, LightSpecular);
 	glLightfv(GL_LIGHT1, GL_POSITION, LightPosition2);
 	
-	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+	glClearColor(0.2f, 0.2f, 0.2f, 0.0f);
 	
 	[self resetCamera];
 	
@@ -553,6 +627,7 @@ recVec gOrigin = {0.0, 0.0, 0.0};
     [self setVertexNormals:0];
     [self setShowVertices:0];
     [self setShowBox:1];
+    [label setStringValue:@""];
     
 	//setStartTime();
 	time = CFAbsoluteTimeGetCurrent ();  // set animation time start time

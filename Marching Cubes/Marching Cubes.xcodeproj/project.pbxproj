@@ -21,6 +21,7 @@
 		2C83B11E11331683006A1002 /* Ray.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83B11D11331683006A1002 /* Ray.m */; };
 		2C83B12E11331CAA006A1002 /* Vec3.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C83B12D11331CAA006A1002 /* Vec3.m */; };
 		2CC9943311471D0C005977E4 /* Hit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC9943211471D0C005977E4 /* Hit.m */; };
+		2CC9959D1148288F005977E4 /* zplane.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2CC9959C1148288F005977E4 /* zplane.txt */; };
 		2CD792DC111111B30028FFF0 /* EngineQuarterScale.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2CD792DB111111B30028FFF0 /* EngineQuarterScale.txt */; };
 		2CD792EA111112270028FFF0 /* atom9.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2CD792E9111112270028FFF0 /* atom9.txt */; };
 		2CD79302111113230028FFF0 /* 3dheadHalfScaleSmooth.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2CD79301111113230028FFF0 /* 3dheadHalfScaleSmooth.txt */; };
@@ -37,6 +38,7 @@
 		2CD7949A1111BB450028FFF0 /* dog.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2CD794991111BB450028FFF0 /* dog.txt */; };
 		2CD794CE111200F10028FFF0 /* trackball.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CD794CC111200F10028FFF0 /* trackball.c */; };
 		2CDF590B112F1F3700F444CE /* blob.icns in Resources */ = {isa = PBXBuildFile; fileRef = 2CDF590A112F1F3700F444CE /* blob.icns */; };
+		2CE2C4F311517137009EBA15 /* Voxel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE2C4F211517137009EBA15 /* Voxel.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -73,6 +75,7 @@
 		2C83B12D11331CAA006A1002 /* Vec3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vec3.m; sourceTree = "<group>"; };
 		2CC9943111471D0C005977E4 /* Hit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hit.h; sourceTree = "<group>"; };
 		2CC9943211471D0C005977E4 /* Hit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hit.m; sourceTree = "<group>"; };
+		2CC9959C1148288F005977E4 /* zplane.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zplane.txt; sourceTree = "<group>"; };
 		2CD792DB111111B30028FFF0 /* EngineQuarterScale.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EngineQuarterScale.txt; sourceTree = "<group>"; };
 		2CD792E9111112270028FFF0 /* atom9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = atom9.txt; sourceTree = "<group>"; };
 		2CD79301111113230028FFF0 /* 3dheadHalfScaleSmooth.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3dheadHalfScaleSmooth.txt; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 		2CD794CC111200F10028FFF0 /* trackball.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trackball.c; sourceTree = "<group>"; };
 		2CD794CD111200F10028FFF0 /* trackball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trackball.h; sourceTree = "<group>"; };
 		2CDF590A112F1F3700F444CE /* blob.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = blob.icns; sourceTree = "<group>"; };
+		2CE2C4F111517137009EBA15 /* Voxel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Voxel.h; sourceTree = "<group>"; };
+		2CE2C4F211517137009EBA15 /* Voxel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Voxel.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Marching Cubes-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Marching Cubes-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +114,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2CE2C4F111517137009EBA15 /* Voxel.h */,
+				2CE2C4F211517137009EBA15 /* Voxel.m */,
 				2C83B12C11331CAA006A1002 /* Vec3.h */,
 				2C83B12D11331CAA006A1002 /* Vec3.m */,
 				2C83B11C11331683006A1002 /* Ray.h */,
@@ -180,6 +187,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2CC9959C1148288F005977E4 /* zplane.txt */,
 				2CDF590A112F1F3700F444CE /* blob.icns */,
 				2C24E6591122318900FCD881 /* circle.txt */,
 				2C24E6A51122374800FCD881 /* peak.txt */,
@@ -285,6 +293,7 @@
 				2C24E65A1122318900FCD881 /* circle.txt in Resources */,
 				2C24E6A61122374800FCD881 /* peak.txt in Resources */,
 				2CDF590B112F1F3700F444CE /* blob.icns in Resources */,
+				2CC9959D1148288F005977E4 /* zplane.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +313,7 @@
 				2C83B11E11331683006A1002 /* Ray.m in Sources */,
 				2C83B12E11331CAA006A1002 /* Vec3.m in Sources */,
 				2CC9943311471D0C005977E4 /* Hit.m in Sources */,
+				2CE2C4F311517137009EBA15 /* Voxel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
